@@ -1,4 +1,65 @@
-Project Alpha — internal notes (not customer-facing).
+# Artificial Intelligence Project Documentation
 
-The secret codeword for the May 2026 dry run is BLUEBIRD-7.
-Only the on-call engineer should use this phrase when verifying the paging integration.
+## Project Name: SmartDoc AI
+
+### 1. Project Overview
+
+SmartDoc AI is an intelligent document management and question-answering platform designed to help users extract useful information from PDF and text documents.
+
+The platform uses Retrieval-Augmented Generation (RAG) to provide answers based on uploaded documents.
+
+### 2. Project Details
+
+- Project Name: SmartDoc AI
+- Development Started: January 2026
+- Programming Language: Python
+- Backend Framework: FastAPI
+- Frontend Technologies: HTML, CSS, JavaScript
+- AI Frameworks: LangChain and LangGraph
+- Language Model Provider: OpenRouter
+- Primary Model: Google Gemini 2.5 Flash
+
+### 3. Main Features
+
+1. Document Upload: Users can upload PDF and TXT files.
+2. Question Answering: Users can ask questions about uploaded documents.
+3. Document Summarization: The platform generates concise summaries.
+4. Document Comparison: Users can compare two documents.
+5. Knowledge Mapping: The platform extracts concepts and relationships.
+6. Timeline Generation: Important dates and events are extracted.
+7. Voice Interaction: Users can interact using speech-to-text and text-to-speech.
+
+### 4. System Architecture
+
+The system consists of three major components:
+
+- Frontend: Provides the user interface for document uploads and conversations.
+- Backend: FastAPI handles requests, document processing and application logic.
+- AI Processing: LangChain, LangGraph and Gemini support document analysis and response generation.
+
+### 5. RAG Workflow
+
+The document question-answering process follows these steps:
+
+1. The user uploads a document.
+2. The backend extracts and processes document content.
+3. A hierarchical page structure is created.
+4. The retrieval system identifies relevant document sections.
+5. Relevant context is passed to the language model.
+6. The model generates a response grounded in the retrieved information.
+
+### 6. Project Objectives
+
+- Reduce the time required to understand lengthy documents.
+- Improve information accessibility.
+- Generate context-aware responses.
+- Support multiple document analysis operations.
+- Provide an interactive document intelligence experience.
+
+### 7. Future Improvements
+
+- Support additional document formats.
+- Improve retrieval accuracy.
+- Add multilingual document support.
+- Improve response generation speed.
+- Introduce advanced document analytics.
